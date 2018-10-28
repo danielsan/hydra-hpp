@@ -4,7 +4,9 @@
   "description": "Hydra Hot Potato Player (game)",
   "main": "hpp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,12 @@
   },
   "homepage": "https://github.com/cjus/hydra-hpp#readme",
   "dependencies": {
-    "fwsp-hydra": "0.14.3"
+    "fwsp-hydra": "0.15.0",
+    "snyk": "^1.105.0"
   },
   "devDependencies": {
     "eslint": "3.13.1",
     "eslint-plugin-jasmine": "2.2.0"
-  }
+  },
+  "snyk": true
 }
